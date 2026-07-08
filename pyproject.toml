@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mercury_rfs"
+version = "0.0.0"
+description = "Register file system: Config -> VHDL + Python."
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.ruff]
+line-length = 80
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
